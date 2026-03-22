@@ -33,10 +33,8 @@ When an anomaly is detected, the Master ESP32 sends a trigger command to the ESP
 | VDD         | 3.3V      | Power |
 | GND         | GND       | Ground |
 
-### 2. Manual Trigger Button → ESP32 Master (Optional)
-Wire a button between **GPIO4** and **GND** on the Master ESP32 to manually trigger the camera (Internal pull-up is enabled).
 
-### 3. ESP32 Master ↔ ESP32-CAM Slave (UART2)
+### 2. ESP32 Master ↔ ESP32-CAM Slave (UART2)
 
 Both boards communicate via UART at **460800 baud**. 
 
@@ -44,6 +42,7 @@ Both boards communicate via UART at **460800 baud**.
 |--------------|-|-----------------|
 | GPIO 17 (TX2)| → | GPIO 3 (RX0) |
 | GPIO 16 (RX2)| ← | GPIO 1 (TX0) |
+| **VIN** | - | **VIN** |
 | **GND**      | ─ | **GND** |
 
 > **⚠ IMPORTANT:** Both boards **MUST** share a common GND. If they are powered via separate USB cables, connect their GND pins together.
@@ -104,6 +103,4 @@ The system will snap a photo, process it through the AI neural net on the ESP32-
 | 0     | SECURE     | 0     | No villains detected                 |
 | 1     | GUARDED    | —     | Reserved                             |
 | 2     | ELEVATED   | 1     | Single villain spotted               |
-| 3     | HIGH       | 2     | Multiple threats                     |
-| 4     | SEVERE     | 3     | Coordinated attack suspected         |
-| 5     | CRITICAL   | 4+    | Sinister Six assembling!             |
+
