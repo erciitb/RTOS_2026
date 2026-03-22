@@ -93,7 +93,7 @@ Once both microcontrollers are flashed, wired together, and plugged in (The Mast
    *(If you don't have the `requirements.txt` handy, run `pip install pygame opencv-python pyserial numpy`)*
 4. Run the display script:
    ```bash
-   python test2.py --port <YOUR_COM_PORT>
+   python KAREN.py --port <YOUR_COM_PORT>
    ```
    *(Replace `<YOUR_COM_PORT>` with the Master ESP32's COM port, e.g., `COM3` on Windows, or `/dev/cu.usbserial-...` on Mac/Linux. If omitted, the script will list available ports and ask you to type one).*
 
