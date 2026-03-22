@@ -75,12 +75,23 @@ Once both microcontrollers are flashed, wired together, and plugged in (The Mast
    ```bash
    cd pc_display
    ```
-2. Install the required Python dependencies:
+2. Create and activate a Python virtual environment (Recommended):
+   - **Windows:**
+     ```bash
+     python -m venv .venv
+     .venv\Scripts\activate
+     ```
+   - **Mac/Linux:**
+     ```bash
+     python3 -m venv .venv
+     source .venv/bin/activate
+     ```
+3. Install the required Python dependencies:
    ```bash
    pip install -r requirements.txt
    ```
    *(If you don't have the `requirements.txt` handy, run `pip install pygame opencv-python pyserial numpy`)*
-3. Run the display script:
+4. Run the display script:
    ```bash
    python test2.py --port <YOUR_COM_PORT>
    ```
