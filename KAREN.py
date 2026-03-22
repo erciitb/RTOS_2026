@@ -9,7 +9,7 @@
 ║    3. Type [CAPTURE] in PC terminal directly into Serial Monitor            ║
 ║                                                                            ║
 ║  Usage:                                                                    ║
-║    python sentry_display.py --port COMx                                    ║
+║    python KAREN.py --port COMx                                    ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 """
 
