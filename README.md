@@ -1,6 +1,6 @@
-# 🕸 THE SPIDER-SENSE SENTRY — Full System
+# 🕸 THE SPIDER-SENSE SENTRY - RTOS ERC 2026
 
-> **Educational Project (Theme: Spider-Man Multiverse)**: RTOS Task Prioritization, ESP32-CAM MTMN Face Detection, UART IPC, Audio FFT Processing, Real-Time Python HUD.
+> **RTOS Project (Theme: Spider-Man Multiverse)**: RTOS Task Prioritization, ESP32-CAM MTMN Face Detection, UART IPC, Audio FFT Processing, Real-Time Python HUD.
 
 The Multiverse has fractured! To keep the neighborhood safe, Peter Parker has built a hardwired, localized defense system using scavenged Stark Tech.
 
